@@ -1,39 +1,12 @@
-- posts = partial('_partials/posts', { postlimit: 1 })
-- latest = posts[0]
+- latest =collections.latest
 
 h1.title
   img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar.jpg" height=50 width=50)
-  | &nbsp;Welcome!
+  | Welcome!
 
 .post-content.addr
   :marked
     Hello and welcome to my <a class="url" href="#{site_url}">b:log</a>. I'm <span class="fn n">Remy Sharp</span>, a developer running my own business called <a class="org url" href="http://leftlogic.com">Left Logic</a> out of <span class="locality">Brighton</span>, <abbr title="United Kingdom">UK</abbr>. This place will mostly concentrate on <a href="/tag/web/">web</a>, <a href="/tag/code/">code</a>, a touch of <a href="/tag/business/">business</a> and some other  <a href="/tag/personal/">personal pieces</a> too</a>. Enjoy!
-
-article.post
-  header.post-header
-    h2.title
-      a(href="#{latest.relative}") Latest: #{ latest.title }
-  section.post-excerpt.post-content
-    - content = partial('blog/' + latest.slug);
-
-    if content.split(/<!--\s*more\s*-->/).length > 1
-      != content.split(/<!--\s*more\s*-->/)[0].replace(/<h1>.*?<\/h1>/, '').trim()
-    else if content.split('<hr>').length > 1
-      != content.split('<hr>')[0].replace(/<h1>.*?<\/h1>/, '').trim()
-    else
-      != content.split('<p>').slice(0, 4).join('<p>').replace(/<h1>.*?<\/h1>/, '').trim()
-    p
-      a(href="#{latest.relative}") Read the rest of this entry &raquo;
-
-article.post.lists
-  header.post-header
-    h2.title Recently Updated
-  .post-content
-    ul
-      each post in recent
-        li
-          a(href="#{ public.blog._data[post.slug].relative }") #{ public.blog._data[post.slug].title }
-          small &nbsp; updated #{ moment(post.date).format('D-MMM YYYY') }
 
 article.post.lists#elsewhere
   header.post-header

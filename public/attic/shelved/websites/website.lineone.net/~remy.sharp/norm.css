@@ -1,0 +1,31 @@
+body 	{ background-color:#000000; color: #FF8040; font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 10pt;}
+body.cv 	{ background-image: url(img/page.gif); background-attachment: Fixed; background-repeat: Repeat-y; 
+	background-position: Top Left; margin-top: 24pt; margin-right:60pt; margin-bottom:24pt; margin-left: 60pt;}
+
+.story	{margin-top: 24pt; margin-right:60pt; margin-bottom:24pt; margin-left: 60pt;}
+
+h1	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size:18pt; font-weight: bold; text-decoration: none;}
+h2	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size:16pt; font-weight: bold; text-decoration: none}
+h3	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size:14pt; font-weight: none; text-decoration: none;}
+h4	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size:12pt; font-weight: none; text-decoration: none;}
+h5	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size:8pt; font-weight: bold; text-decoration: none;}
+h6	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size:6pt; font-weight: bold; text-decoration: none;}
+
+p.GlowFilter {filter : Glow(Color="#F4D071",Strength="5")}
+
+li.cv	{color:#FFFFFF}
+
+p	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 12pt;text-align: justify; text-decoration: none; color: #FF8040}
+p.plain	{text-align: left }
+p.cv 	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 12pt; color: #FFFFFF; text-align: Justify; text-decoration: None; }
+p.info	{font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 10pt; text-align: justify; text-decoration: none; color: #FCC41A}
+code	{font-family: Courier New, Courier; font-size: 10pt; text-align: left; color:#FCC41A}
+
+hr	{color: #FF8040}
+hr.cv	{color: #FFFFFF}
+
+a:link		{font-family: Tahoma, Verdana, Arial, sans-serif; font-weight: bold; text-align: left; text-decoration: none; color: #F4D071}
+a:visited		{font-family: Tahoma, Verdana, Arial, sans-serif; font-weight: bold; text-align: left; text-decoration: none; color: #5C5300}
+a:active		{font-family: Tahoma, Verdana, Arial, sans-serif; font-weight: bold; text-align: left; text-decoration: none; color: #F4D071}
+a:hover		{font-family: Tahoma, Verdana, Arial, sans-serif; font-weight: bold; text-align: left; text-decoration: underline; color: #F4D071}
+

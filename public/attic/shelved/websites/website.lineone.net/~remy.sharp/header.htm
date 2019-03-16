@@ -1,0 +1,67 @@
+<HTML>
+<HEAD><LINK REL="stylesheet" TYPE="text/css" HREF="norm.css">
+<SCRIPT LANGUAGE="VBScript">
+<!--
+Sub Window_OnLoad()
+	call logo.filters.item(0).Apply()
+	logo.style.visibility=""
+	call logo.filters.item(0).Play()
+End Sub
+-->
+</SCRIPT>
+<script language="JavaScript">
+	var x=200; 
+	var y=110;
+	var direction=0;
+	window.onload = setlights;
+	
+
+	function setlights()
+	{
+		litlogo.filters[0].clear();
+		litlogo.filters[0].addcone(440,250,05,200,110,250,250,250,60,10);
+		litlogo.filters[0].addAmbient(60,60,60,100);
+		setTimeout ( "MoveItNow()", 10 );
+	}
+
+
+	function MoveItNow()
+	{
+		if(direction==1)
+		{
+			x = x-5;
+			y = y+2.5;
+			if (y==150) 
+				{direction=0;}
+		}
+		else
+		{
+			x = x+5;
+			y = y-2.5;
+			if (x==300)
+				{direction=1;}
+		}
+		litlogo.filters[0].movelight(0,x,y,15,1);
+		setTimeout ( "MoveItNow()",50 );
+	}
+</script>
+</HEAD>
+<BODY>
+<CENTER>
+        <div id="litlogo" style="WIDTH:280;HEIGHT:144; visibility:visible; filter:light(enabled=1);">
+        <dd><IMG ID="logo" SRC="img/Sharq_sm.jpg" STYLE="filter:revealTrans(Duration=3.0, Transition=12);VISIBILITY:hidden"  ALT="Sharq Banner"></dd>
+        </div>
+
+</CENTER>
+<HR width=90%>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
