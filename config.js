@@ -1,5 +1,5 @@
 module.exports = () => {
-  const output = '_site';
+  const output = '_site/build';
   const input = 'public';
 
   const misc = {
